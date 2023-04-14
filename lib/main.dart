@@ -1,41 +1,55 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
+int? numero = 10;
+String? nome = "Sandro";
+
 void main() {
-  runApp(const MaterialApp(
-    title: "Null Safety",
-    home: Home(),
-  ));
-}
+  // String nome = "Sandro";
+  // int idade = 10;
+  // double altura = 1.20;
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+  // String? complemento;
 
-  @override
-  State<Home> createState() => _HomeState();
-}
+  // double? preco;
 
-class Funcionario {
-  late double salario;
+  // runApp(const MaterialApp(
+  //   title: "Null Safety",
+  //   home: Home(),
+  // ));
 
-  calcular() {
-    salario = 100;
-  }
-}
+  // int resultado = numero!;
 
-class _HomeState extends State<Home> {
-  String nome = "Sandro";
-  int idade = 10;
-  double altura = 1.20;
+  // String resultado = nome ?? "";
 
-  String? complemento;
-  int? numero;
-  double? preco;
+  // ignore: avoid_print
+  // print("total caracteres ${resultado.length}");
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-      title: const Text("Null Safety"),
-    ));
-  }
+  // List<String> lista1 = ["Morango", "Banana", "Melão"];
+  // List<String>? lista2;
+  // List<String?> lista3 = ["Morango", null, "Melão"];
+
+  // // ignore: avoid_print
+  // print("lista1: $lista1");
+
+  // // ignore: avoid_print
+  // print("lista2: $lista2");
+
+  // // ignore: avoid_print
+  // print("lista3: $lista3");
+
+  // List<String?> lista3 = ["Morango", null, "Melão"];
+  // String valor = lista3.first!;
+  // // ignore: avoid_print
+  // print("valor é: $valor");
+
+  List<String>? lista2;
+  // ignore: avoid_print, dead_code
+  print("valor é: ${lista2?.length}");
+
+  Random? random;
+  // random = Random();
+  // ignore: avoid_print, dead_code
+  print("Número aleatório: ${random?.nextInt(10)}");
 }
