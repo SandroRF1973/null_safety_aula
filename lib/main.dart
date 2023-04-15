@@ -1,47 +1,27 @@
 import 'package:flutter/material.dart';
 
-//int totalCaracteres(String? texto) {
-// if (texto == null) {
-//   return 0;
-// }
+int total = 0;
 
-// if (texto == null) {
-//   throw "texto não pode ser nulo";
-// }
+class Pedidos {
+  static int total = 0;
+}
 
-// return texto.length;
-//}
+class Carrinho {
+  int totalItens = 0;
+  String item;
+  int quantidade;
 
-// class Usuario {
-//   String? _nome;
-//   int totalCaracteres() {
-//     String? nome = _nome;
-//     if (nome == null) {
-//       return 0;
-//     }
-
-//     return nome.length;
-//   }
-// }
+  Carrinho(this.item, this.quantidade);
+}
 
 void main() {
-  // runApp(const MaterialApp(
-  //   title: "Null Safety",
-  //   home: Home(),
-  // ));
-
-  //String? texto;
-  //texto = "Sandro";
-
-  // if (DateTime.now().hour < 12) {
-  //   texto = "verdadeiro";
-  // } else {
-  //   texto = "falso";
-  // }
+  total = 10;
 
   // ignore: avoid_print
-  //print("resultado $texto");
+  print("total: $total");
 
   // ignore: avoid_print
-  //print("tamanho ${texto.length}");
+  print("identificador: ${Pedidos.total}");
+
+  Carrinho carrinho = Carrinho("Capa celular", 2);
 }
