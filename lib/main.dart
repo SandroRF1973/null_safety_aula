@@ -1,8 +1,28 @@
 import 'package:flutter/material.dart';
 
-int soma({required primeiro, required segundo}) {
-  return primeiro + segundo;
-}
+//int totalCaracteres(String? texto) {
+// if (texto == null) {
+//   return 0;
+// }
+
+// if (texto == null) {
+//   throw "texto não pode ser nulo";
+// }
+
+// return texto.length;
+//}
+
+// class Usuario {
+//   String? _nome;
+//   int totalCaracteres() {
+//     String? nome = _nome;
+//     if (nome == null) {
+//       return 0;
+//     }
+
+//     return nome.length;
+//   }
+// }
 
 void main() {
   // runApp(const MaterialApp(
@@ -10,8 +30,18 @@ void main() {
   //   home: Home(),
   // ));
 
-  int resultado = soma(primeiro: 1, segundo: 2);
+  //String? texto;
+  //texto = "Sandro";
+
+  // if (DateTime.now().hour < 12) {
+  //   texto = "verdadeiro";
+  // } else {
+  //   texto = "falso";
+  // }
 
   // ignore: avoid_print
-  print("resultado: $resultado ");
+  //print("resultado $texto");
+
+  // ignore: avoid_print
+  //print("tamanho ${texto.length}");
 }
